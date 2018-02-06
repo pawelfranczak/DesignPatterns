@@ -23,7 +23,7 @@ public class Soldier extends Person {
 
 	@Override
 	public String toString() {
-		return "Soldier [weapon=" + weapon + ", firstName=" + firstName
+		return "Soldier [firstName=" + firstName
 				+ ", lastName=" + lastName + ", hp=" + hp + "]";
 	}
 
