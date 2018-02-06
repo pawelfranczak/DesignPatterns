@@ -19,7 +19,7 @@ public class MainApp {
 			new WeaponGun(11, 15),
 			new WeaponGun(25, 29),
 			new WeaponGun(15, 35),
-			new WeaponRifle(100, 100)
+			new WeaponRifle(50, 60)
 		);
 
 	public static void main(String[] args) {
@@ -30,7 +30,9 @@ public class MainApp {
 		
 		System.out.println("-");
 		
+		int round = 1;
 		while (soldier1.getHP() > 0 && soldier2.getHP() > 0) {
+			System.out.println("Round " + round++);
 			soldier1.setWeapon(weapons.get(generator.nextInt(weapons.size())));
 			soldier2.setWeapon(weapons.get(generator.nextInt(weapons.size())));
 			int attack1 = soldier1.attackWithweapon();
