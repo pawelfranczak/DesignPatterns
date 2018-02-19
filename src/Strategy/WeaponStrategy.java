@@ -16,11 +16,7 @@ public abstract class WeaponStrategy {
 
 	Random generator = new Random();
 	
-	public int attack() {
-		int power = generator.nextInt(maxHit - minHit + 1) + minHit;
-		System.out.println("Weapon with power " + power);
-		return power;
-	}
+	public abstract int attack();
 
 	@Override
 	public String toString() {
