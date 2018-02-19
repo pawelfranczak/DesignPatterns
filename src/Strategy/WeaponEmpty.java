@@ -9,7 +9,7 @@ public class WeaponEmpty extends WeaponStrategy {
 	@Override
 	public int attack() {
 		int power = 0;
-		System.out.println("Weapon [shoot enemy] with power " + power);
+		System.out.println("No weapon with power " + power);
 		return power;
 	}
 
