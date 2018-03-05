@@ -19,7 +19,8 @@ public class MainApp {
 			new WeaponGun(11, 15),
 			new WeaponGun(25, 29),
 			new WeaponGun(15, 35),
-			new WeaponRifle(50, 60)
+			new WeaponRifle(50, 60),
+			new WeaponEmpty()
 		);
 
 	public static void main(String[] args) {
