@@ -7,7 +7,7 @@ public abstract class WeaponStrategy {
 	int minHit;
 	int maxHit;
 	String name;
-	
+
 	public WeaponStrategy(int minHit, int maxHit, String name) {
 		this.minHit = minHit;
 		this.maxHit = maxHit;
@@ -15,7 +15,7 @@ public abstract class WeaponStrategy {
 	}
 
 	Random generator = new Random();
-	
+
 	public abstract int attack();
 
 	@Override
@@ -23,6 +23,4 @@ public abstract class WeaponStrategy {
 		return "Weapon [minHit=" + minHit + ", maxHit=" + maxHit + ", name=" + name + "]";
 	}
 
-	
-	
 }

@@ -27,6 +27,4 @@ public class Soldier extends Person {
 				+ ", lastName=" + lastName + ", hp=" + hp + "]";
 	}
 
-	
-	
 }

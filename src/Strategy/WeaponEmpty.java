@@ -13,5 +13,4 @@ public class WeaponEmpty extends WeaponStrategy {
 		return power;
 	}
 
-
 }
