@@ -25,4 +25,12 @@ public abstract class Person {
 		this.hp = life;
 	}
 	
+	public boolean isAlive() {
+		return hp > 0;
+	}
+	
+	public boolean isDead() {
+		return hp <= 0;
+	}
+	
 }

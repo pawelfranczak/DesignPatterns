@@ -31,7 +31,7 @@ public class MainApp {
 		System.out.println("-");
 		
 		int round = 1;
-		while (soldier1.getHP() > 0 && soldier2.getHP() > 0) {
+		while (soldier1.isAlive() && soldier2.isAlive()) {
 			System.out.println("Round " + round++);
 			soldier1.setWeapon(weapons.get(generator.nextInt(weapons.size())));
 			soldier2.setWeapon(weapons.get(generator.nextInt(weapons.size())));
@@ -45,9 +45,9 @@ public class MainApp {
 		}
 		
 		
-		if (soldier1.getHP() > 0 && soldier2.getHP() <= 0) {
+		if (soldier1.isAlive() && soldier2.isDead()) {
 			System.out.println("Winner " + soldier1);
-		} else if (soldier1.getHP() <= 0 && soldier2.getHP() > 0) {
+		} else if (soldier1.isDead() && soldier2.isAlive()) {
 			System.out.println("Winner " + soldier2);
 		} else {
 			System.out.println("DRAW");
