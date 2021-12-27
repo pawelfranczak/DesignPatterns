@@ -1,5 +1,9 @@
 package pl.pfranczak.patterns.creational.factory;
 
+/*
+ * https://www.tutorialspoint.com/design_pattern/factory_pattern.htm
+ */
+
 public class FactoryPatternDemo {
 
 	public static void main(String[] args) {
